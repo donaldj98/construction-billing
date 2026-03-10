@@ -63,7 +63,6 @@ export default function App() {
   const [newLab, setNewLab] = useState({ role: "", unit: "Per Day", rate: "" });
   const [companyEdit, setCompanyEdit] = useState(false);
   const [companyDraft, setCompanyDraft] = useState(company);
-  const printRef = useRef();
 
   const addBillItem = (mat) => {
     if (billItems.find(i => i.id === mat.id)) return;
